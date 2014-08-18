@@ -77,7 +77,7 @@ define(function (require, exports, module) {
         hostEditor.setSelection(pos, { line: pos.line, ch: end });
         
         return {
-            color: match[0],
+            color: ColorUtils.ColorResult(match),
             start: startBookmark,
             end: endBookmark
         };
